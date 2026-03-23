@@ -1,5 +1,7 @@
 #  ShotForge
 
+HAFTA 1 VİDEO LİNKİ:
+
 **Basketbol Oyuncu Analiz Mobil Uygulaması**
 
 ShotForge, basketbol oyuncularının şut verilerini takip eden, performans istatistiklerini görselleştiren ve oyuncuları karşılaştırmaya olanak tanıyan bir mobil uygulamadır.
