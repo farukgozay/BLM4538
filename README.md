@@ -1,6 +1,6 @@
 #  ShotForge
 
-HAFTA 1 VİDEO LİNKİ:
+HAFTA 1 VİDEO LİNKİ: https://www.youtube.com/watch?v=t55gxae5N-c
 
 **Basketbol Oyuncu Analiz Mobil Uygulaması**
 
