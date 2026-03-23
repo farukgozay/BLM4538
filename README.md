@@ -74,8 +74,4 @@ dotnet run
 
 
 
----
 
-## 📄 Lisans
-
-Bu proje eğitim amaçlı geliştirilmiştir.
