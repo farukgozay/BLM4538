@@ -18,6 +18,10 @@ namespace ShotForgeAPI.Data
         public DbSet<Player> Players { get; set; }
         public DbSet<Shot> Shots { get; set; }
         public DbSet<Stat> Stats { get; set; }
+        public DbSet<Arena> Arenas { get; set; }
+        public DbSet<Game> Games { get; set; }
+        public DbSet<Season> Seasons { get; set; }
+        public DbSet<Team> Teams { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
