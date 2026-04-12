@@ -4,6 +4,10 @@ HAFTA 1 VİDEO LİNKİ: https://www.youtube.com/watch?v=t55gxae5N-c
 
 HAFTA 2 VİDEO LİNKİ: https://www.youtube.com/watch?v=li7oqD1jaRk
 
+HAFTA 3 VİDEO LİNKİ: https://www.youtube.com/watch?v=RoY1wSd_MQU
+
+HAFTA 4 VİDEO LİNKİ:
+
 **Basketbol Oyuncu Analiz Mobil Uygulaması**
 
 ShotForge, basketbol oyuncularının şut verilerini takip eden, performans istatistiklerini görselleştiren ve oyuncuları karşılaştırmaya olanak tanıyan bir mobil uygulamadır.
