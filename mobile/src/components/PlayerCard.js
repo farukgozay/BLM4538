@@ -1,17 +1,17 @@
-/**
- * ShotForge - Oyuncu Kartı Bileşeni (PlayerCard)
- * Dashboard'da her oyuncu için gösterilen kart bileşeni.
- */
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import { COLORS, SPACING, FONT_SIZES, POSITIONS } from '../utils/constants';
+import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { COLORS, SPACING, FONT_SIZES } from '../utils/constants';
 import { getInitials } from '../utils/helpers';
 
 const PlayerCard = ({ player, onPress }) => {
   return (
     <TouchableOpacity style={styles.card} onPress={onPress} activeOpacity={0.7}>
       <View style={styles.avatarContainer}>
-        <Text style={styles.avatarText}>{getInitials(player.name)}</Text>
+        {player.photo ? (
+          <Image source={{ uri: player.photo }} style={styles.avatarImage} resizeMode="cover" />
+        ) : (
+          <Text style={styles.avatarText}>{getInitials(player.name)}</Text>
+        )}
       </View>
       <View style={styles.infoContainer}>
         <Text style={styles.playerName}>{player.name}</Text>
@@ -21,6 +21,9 @@ const PlayerCard = ({ player, onPress }) => {
             <Text style={styles.positionText}>{player.position}</Text>
           </View>
           <Text style={styles.jerseyNumber}>#{player.jerseyNumber}</Text>
+          {player.stats && (
+            <Text style={styles.ppg}>{player.stats.pointsPerGame} PPG</Text>
+          )}
         </View>
       </View>
       <Text style={styles.arrow}>›</Text>
@@ -40,14 +43,19 @@ const styles = StyleSheet.create({
     borderColor: COLORS.border,
   },
   avatarContainer: {
-    width: 50,
-    height: 50,
-    borderRadius: 25,
+    width: 56,
+    height: 56,
+    borderRadius: 28,
     backgroundColor: COLORS.primary + '20',
     justifyContent: 'center',
     alignItems: 'center',
     borderWidth: 1.5,
     borderColor: COLORS.primary,
+    overflow: 'hidden',
+  },
+  avatarImage: {
+    width: 56,
+    height: 56,
   },
   avatarText: {
     fontSize: FONT_SIZES.lg,
@@ -89,6 +97,11 @@ const styles = StyleSheet.create({
     fontSize: FONT_SIZES.xs,
     color: COLORS.textMuted,
     fontWeight: '600',
+  },
+  ppg: {
+    fontSize: FONT_SIZES.xs,
+    color: COLORS.primary,
+    fontWeight: '700',
   },
   arrow: {
     fontSize: 24,
