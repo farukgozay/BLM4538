@@ -6,8 +6,9 @@
  */
 
 // API temel URL'si - backend sunucu adresi
-export const API_BASE_URL = 'http://10.0.2.2:5000/api'; // Android emülatör için
-// export const API_BASE_URL = 'http://localhost:5000/api'; // iOS simülatör için
+export const API_BASE_URL = 'http://172.20.10.2:5000/api'; // Yerel ağ IP'si (Expo Go fiziksel cihaz)
+// export const API_BASE_URL = 'http://localhost:5000/api'; // Web / iOS Simulator
+// export const API_BASE_URL = 'http://10.0.2.2:5000/api'; // Android emülatör
 
 // ShotForge Renk Paleti - Koyu tema, neon yeşil aksanlar
 export const COLORS = {
